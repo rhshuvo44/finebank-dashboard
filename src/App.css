@@ -58,3 +58,9 @@
   height: 20px;
   width: 20px;
 } */
+.dashboard-title {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 0;
+}
