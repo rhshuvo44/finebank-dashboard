@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 const Sidebar = () => {
   return (
     <div className="p-4 w-60 text-center min-h-full bg-[#191919]">
-      <div className="bg-[#191919]">
+      {/* <div className="bg-[#191919]">
         <h2 className="text-white  font-bold text-3xl">FINEbank.IO</h2>
-      </div>
-      <ul className="menu mt-8">
+      </div> */}
+      <ul className="menu mt-20">
         {/* Sidebar content here */}
         {sidebarLinks.map(({ path, icon, title }) => (
           <li key={path} className="py-2">
