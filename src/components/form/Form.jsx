@@ -1,6 +1,6 @@
 const Form = ({ children, ...rest }) => {
   return (
-    <form className="card-body" {...rest}>
+    <form {...rest}>
       {children}
     </form>
   );

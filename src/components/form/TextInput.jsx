@@ -8,7 +8,7 @@ const TextInput = ({ name, label, errors, register, ...rest }) => {
         id={name}
         name={name}
         {...rest}
-        className="input input-bordered mb-2"
+        className="input w-full mb-2"
         {...register(name, { required: true })}
         required
       />

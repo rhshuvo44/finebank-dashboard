@@ -1,4 +1,58 @@
-input {
+.input {
+  height: 40px;
   border-radius: 8px;
-  border: 1px solid #4b5768;
+  border: 1px solid #d0d5dd !important;
+  outline: none;
+  transition: 200ms ease-in;
+  padding-left: 1rem;
+}
+
+.input:focus {
+  border-bottom: 4px solid #d0d5dd !important;
+  padding-top: 2px;
+  outline: none;
+}
+
+.input::placeholder {
+  color: #4b5768;
+  opacity: 0.5;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.form-title {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 32px;
+  letter-spacing: 3.2px;
+}
+
+.google-btn {
+  width: 100%;
+  display: flex;
+  padding: 0.5rem 1.4rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  gap: 0.75rem;
+  color: rgb(65, 63, 63);
+  background-color: #e4e7eb;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+.google-btn svg {
+  height: 24px;
+}
+
+.google-btn:hover {
+  transform: scale(1.02);
 }
