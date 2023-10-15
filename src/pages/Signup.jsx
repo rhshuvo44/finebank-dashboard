@@ -1,16 +1,16 @@
-import Form from "../components/form/Form";
-import TextInput from "../components/form/TextInput";
-import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 import * as yup from "yup";
 import Button from "../components/Button";
-import Checkbox from "../components/form/Checkbox";
+import Form from "../components/form/Form";
 import FormTitle from "../components/form/FormTitle";
 import GoogleBtn from "../components/form/GoogleBtn";
-import { Link } from "react-router-dom";
+import TextInput from "../components/form/TextInput";
 
 const schema = yup
   .object({
+    name: yup.string().required("Name is required"),
     email: yup
       .string()
       .email("Invalid email address")
@@ -18,7 +18,7 @@ const schema = yup
     password: yup.string().min(8).max(32).required("Password is required"),
   })
   .required();
-const Login = () => {
+const Signup = () => {
   const {
     register,
     handleSubmit,
@@ -31,8 +31,16 @@ const Login = () => {
     <div className="hero min-h-screen bg-base-100 mb-10">
       <div className="hero-content text-center">
         <div className="max-w-md">
-          <FormTitle text="FINEbank.IO" />
+          <FormTitle text="FINEbank.IO" subtitle="Create an account" />
           <Form onSubmit={handleSubmit(onSubmit)}>
+            <TextInput
+              placeholder="Enter Your Name"
+              label="Name"
+              type="text"
+              name="name"
+              register={register}
+              errors={errors}
+            />
             <TextInput
               placeholder="Enter Your Email Address"
               label="Email Address"
@@ -49,27 +57,30 @@ const Login = () => {
               register={register}
               errors={errors}
             />
-            <div className="flex justify-between items-center">
-              <Checkbox label="Keep me signed in" />
-              <Link to="/" className="text-primary ">
-                Forgot Password?
+            <p className="text-left">
+              By continuing, you agree to our{" "}
+              <Link to="/" className="text-primary">
+                terms of service.
               </Link>
-            </div>
+            </p>
             <div className="form-control mt-6">
-              <Button text="Login" />
+              <Button text="Sign up" />
             </div>
           </Form>
           <div className="divider">
             <p className="shadow-md p-2">or sign in with</p>
           </div>
           <GoogleBtn />
-          <Link to="/signup" className="text-primary font-bold text-xl">
-            Create an account
-          </Link>
+          <p className="text-secondary">
+            Already have an account?{" "}
+            <Link to="/login" className="text-primary ">
+              Sign in here
+            </Link>
+          </p>
         </div>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default Signup;
