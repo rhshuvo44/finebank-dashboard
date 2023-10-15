@@ -28,7 +28,6 @@
   line-height: 32px;
   letter-spacing: 3.2px;
 }
-
 .google-btn {
   width: 100%;
   display: flex;
@@ -48,11 +47,14 @@
   cursor: pointer;
   transition: all 0.6s ease;
 }
-
-.google-btn svg {
+/* .google-btn svg {
   height: 24px;
-}
+} */
 
 .google-btn:hover {
   transform: scale(1.02);
 }
+/* .menu svg {
+  height: 20px;
+  width: 20px;
+} */

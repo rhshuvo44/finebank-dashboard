@@ -5,6 +5,7 @@ const GoogleBtn = () => {
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="xMidYMid"
         viewBox="0 0 256 262"
+        className="h-6"
       >
         <path
           fill="#4285F4"
