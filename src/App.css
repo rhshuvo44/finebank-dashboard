@@ -47,20 +47,56 @@
   cursor: pointer;
   transition: all 0.6s ease;
 }
-/* .google-btn svg {
-  height: 24px;
-} */
 
 .google-btn:hover {
   transform: scale(1.02);
 }
-/* .menu svg {
-  height: 20px;
-  width: 20px;
-} */
-.dashboard-title {
-  position: fixed;
-  top: 10px;
-  left: 0;
-  right: 0;
+
+.menu li > *:not(ul):not(.menu-title):not(details):active,
+.menu li > *:not(ul):not(.menu-title):not(details).active,
+.menu li > details > summary:active {
+  --tw-bg-opacity: 1 !important;
+  background-color: #299d91 !important;
+  --tw-text-opacity: 1 !important;
+  color: #fff !important;
+}
+:where(
+    .menu
+      li:not(.menu-title):not(.disabled)
+      > *:not(ul):not(details):not(.menu-title)
+  ):not(summary):not(.active).focus,
+:where(
+    .menu
+      li:not(.menu-title):not(.disabled)
+      > *:not(ul):not(details):not(.menu-title)
+  ):not(summary):not(.active):focus,
+:where(
+    .menu
+      li:not(.menu-title):not(.disabled)
+      > *:not(ul):not(details):not(.menu-title)
+  ):is(summary):not(.active):focus-visible,
+:where(
+    .menu
+      li:not(.menu-title):not(.disabled)
+      > details
+      > summary:not(.menu-title)
+  ):not(summary):not(.active).focus,
+:where(
+    .menu
+      li:not(.menu-title):not(.disabled)
+      > details
+      > summary:not(.menu-title)
+  ):not(summary):not(.active):focus,
+:where(
+    .menu
+      li:not(.menu-title):not(.disabled)
+      > details
+      > summary:not(.menu-title)
+  ):is(summary):not(.active):focus-visible {
+  cursor: pointer;
+  background-color: #299d91 !important;
+  --tw-text-opacity: 1 !important;
+  color: #fff !important;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
