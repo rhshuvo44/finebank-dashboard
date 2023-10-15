@@ -9,37 +9,37 @@ import {
 
 export const sidebarLinks = [
   {
-    icon: <BsFillGridFill />,
+    icon: <BsFillGridFill className="h-5 w-5" />,
     title: "overview",
     path: "/",
   },
   {
-    icon: <BsWalletFill />,
+    icon: <BsWalletFill className="h-5 w-5" />,
     title: "balances",
     path: "/",
   },
   {
-    icon: <BiTransfer />,
+    icon: <BiTransfer className="h-5 w-5" />,
     title: "transctions",
     path: "/",
   },
   {
-    icon: <BiMoney />,
+    icon: <BiMoney className="h-5 w-5" />,
     title: "bills",
     path: "/",
   },
   {
-    icon: <BiMoneyWithdraw />,
+    icon: <BiMoneyWithdraw className="h-5 w-5" />,
     title: "expenses",
     path: "/",
   },
   {
-    icon: <BiTargetLock />,
+    icon: <BiTargetLock className="h-5 w-5" />,
     title: "goals",
     path: "/",
   },
   {
-    icon: <AiFillSetting />,
+    icon: <AiFillSetting className="h-5 w-5" />,
     title: "settings",
     path: "/",
   },
