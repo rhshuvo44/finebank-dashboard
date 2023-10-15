@@ -4,8 +4,8 @@ import User from "./User";
 
 const Sidebar = () => {
   return (
-    <div className="p-4 w-60 relative text-center min-h-full bg-[#191919]">
-      <div className="fixed top-5 left-0 right-0 bg-[#191919]">
+    <div className="p-4 w-60 text-center min-h-full bg-[#191919]">
+      <div className="bg-[#191919]">
         <h2 className="text-white  font-bold text-3xl">FINEbank.IO</h2>
       </div>
       <ul className="menu mt-16">
@@ -24,9 +24,7 @@ const Sidebar = () => {
         Logout
       </button>
       <div className="divider" />
-      <div className="user-info">
-        <User />
-      </div>
+      <User />
     </div>
   );
 };
