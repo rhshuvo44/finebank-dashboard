@@ -49,7 +49,12 @@ const Login = () => {
               register={register}
               errors={errors}
             />
-            <Checkbox label="Keep me signed in" />
+            <div className="flex justify-between items-center">
+              <Checkbox label="Keep me signed in" />
+              <Link to="/" className="text-primary ">
+                Forgot Password?
+              </Link>
+            </div>
             <div className="form-control mt-6">
               <Button text="Login" />
             </div>
