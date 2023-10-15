@@ -51,7 +51,7 @@ const Login = () => {
             />
             <div className="flex justify-between items-center">
               <Checkbox label="Keep me signed in" />
-              <Link to="/" className="text-primary ">
+              <Link to="/forgot-password" className="text-primary ">
                 Forgot Password?
               </Link>
             </div>
