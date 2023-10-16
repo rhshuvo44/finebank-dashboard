@@ -12,7 +12,7 @@ const MainLayout = () => {
           type="checkbox"
           className="drawer-toggle"
         />
-        <div className="drawer-content bg-base-100 mt-20 flex flex-col items-center justify-center">
+        <div className="drawer-content bg-base-100 mt-28  px-5">
           {/* Page content here */}
           <Outlet />
         </div>
