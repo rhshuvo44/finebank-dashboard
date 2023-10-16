@@ -4,22 +4,13 @@ import Signup from "../pages/Signup";
 import ForgotPassword from "../pages/ForgotPassword";
 import MainLayout from "../layout/MainLayout";
 import Balance from "../pages/Balance";
+import AccountDetails from "../pages/AccountDetails";
 
 const router = createBrowserRouter([
   // {
   //   path: "/",
   //   element: <Login />,
   // },
-  {
-    path: "/",
-    element: <MainLayout />,
-    children: [
-      {
-        path: "balance",
-        element: <Balance />,
-      },
-    ],
-  },
   {
     path: "/login",
     element: <Login />,
@@ -31,6 +22,20 @@ const router = createBrowserRouter([
   {
     path: "/forgot-password",
     element: <ForgotPassword />,
+  },
+  {
+    path: "/",
+    element: <MainLayout />,
+    children: [
+      {
+        path: "balance",
+        element: <Balance />,
+      },
+      {
+        path: "balance/:id",
+        element: <AccountDetails />,
+      },
+    ],
   },
 ]);
 

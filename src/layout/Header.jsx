@@ -4,7 +4,6 @@ import Search from "../components/Search";
 
 const Header = () => {
   const date = new Date();
-  console.log(date.toDateString());
   return (
     <div className="navbar bg-[#191919] text-white fixed top-0  z-50 px-10">
       <div className="navbar-start w-72">

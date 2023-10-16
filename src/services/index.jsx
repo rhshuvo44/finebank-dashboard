@@ -44,3 +44,48 @@ export const sidebarLinks = [
     path: "/",
   },
 ];
+
+export const balancesCards = [
+  {
+    id: 1,
+    accountType: "Credit Card",
+    accountName: "Master Card",
+    accountNumber: "3388 4556  8860 8***",
+    amount: "2500",
+  },
+  {
+    id: 2,
+    accountType: "Investment",
+    accountName: "AB Bank Ltd",
+    accountNumber: "3388 4556 8860 8***",
+    amount: "2500",
+  },
+  {
+    id: 3,
+    accountType: "Credit Card",
+    accountName: "Master Card",
+    accountNumber: "3388 4556  8860 8***",
+    amount: "2500",
+  },
+  {
+    id: 4,
+    accountType: "Credit Card",
+    accountName: "Master Card",
+    accountNumber: "3388 4556  8860 8***",
+    amount: "2500",
+  },
+  {
+    id: 5,
+    accountType: "Credit Card",
+    accountName: "Master Card",
+    accountNumber: "3388 4556  8860 8***",
+    amount: "2500",
+  },
+  {
+    id: 6,
+    accountType: "Credit Card",
+    accountName: "Master Card",
+    accountNumber: "3388 4556  8860 8***",
+    amount: "2500",
+  },
+];

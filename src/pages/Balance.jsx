@@ -1,14 +1,15 @@
 import PageTitle from "../components/PageTitle";
 import SingleCard from "../components/SingleCard";
+import { balancesCards } from "../services";
 
 const Balance = () => {
   return (
     <section>
       <PageTitle title="Balance" />
       <div className="grid grid-cols-3 gap-5">
-        <SingleCard />
-        <SingleCard />
-        <SingleCard />
+        {balancesCards?.map((cardInfo) => (
+          <SingleCard key={cardInfo.id} cardInfo={cardInfo} />
+        ))}
       </div>
     </section>
   );
