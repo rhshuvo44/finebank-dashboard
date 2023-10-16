@@ -1,25 +1,22 @@
 import { BiLogOut } from "react-icons/bi";
+import { NavLink } from "react-router-dom";
 import { sidebarLinks } from "../services";
 import User from "./User";
-import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div className="p-4 w-60 text-center min-h-full bg-[#191919]">
-      {/* <div className="bg-[#191919]">
-        <h2 className="text-white  font-bold text-3xl">FINEbank.IO</h2>
-      </div> */}
       <ul className="menu mt-20">
         {/* Sidebar content here */}
         {sidebarLinks.map(({ path, icon, title }) => (
           <li key={path} className="py-2">
-            <Link
+            <NavLink
               to={path}
               className="text-white capitalize opacity-75 hover:text-white hover:opacity-100 hover:bg-primary focus:opacity-100 focus:bg-primary focus:text-white"
             >
               {icon}
               {title}
-            </Link>
+            </NavLink>
           </li>
         ))}
       </ul>

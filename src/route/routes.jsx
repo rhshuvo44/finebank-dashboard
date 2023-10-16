@@ -32,7 +32,7 @@ const router = createBrowserRouter([
         element: <Balance />,
       },
       {
-        path: "balance/:id",
+        path: "balance/balance-detail/:id",
         element: <AccountDetails />,
       },
     ],

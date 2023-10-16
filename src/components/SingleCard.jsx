@@ -15,7 +15,10 @@ const SingleCard = ({ cardInfo }) => {
       <p className="text-secondary">Total amount</p>
       <div className="card-actions justify-between items-center">
         <button className="text-primary">Remove</button>
-        <Link to={`/balance/${id}`} className="btn btn-primary capitalize">
+        <Link
+          to={`/balance/balance-detail/${id}`}
+          className="btn btn-primary capitalize"
+        >
           Details <AiOutlineRight />
         </Link>
       </div>
