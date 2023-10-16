@@ -100,3 +100,26 @@
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
+
+.react-tabs__tab-list {
+  border-bottom: none !important;
+}
+.react-tabs__tab {
+  border: none !important;
+  border-bottom: 1px solid transparent;
+}
+.react-tabs__tab--selected {
+  background: none !important;
+  color: #299d91 !important;
+  border-bottom: 1px solid #299d91 !important;
+}
+
+.react-tabs__tab:focus:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  left: -4px;
+  right: -4px;
+  bottom: -5px;
+  background: none !important;
+}

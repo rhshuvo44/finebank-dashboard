@@ -21,7 +21,7 @@ export const sidebarLinks = [
   {
     icon: <BiTransfer className="h-5 w-5" />,
     title: "transctions",
-    path: "/",
+    path: "/transaction",
   },
   {
     icon: <BiMoney className="h-5 w-5" />,

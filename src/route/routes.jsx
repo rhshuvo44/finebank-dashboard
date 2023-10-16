@@ -5,6 +5,7 @@ import ForgotPassword from "../pages/ForgotPassword";
 import MainLayout from "../layout/MainLayout";
 import Balance from "../pages/Balance";
 import AccountDetails from "../pages/AccountDetails";
+import Transaction from "../pages/Transaction";
 
 const router = createBrowserRouter([
   // {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "balance/balance-detail/:id",
         element: <AccountDetails />,
+      },
+      {
+        path: "transaction",
+        element: <Transaction />,
       },
     ],
   },
