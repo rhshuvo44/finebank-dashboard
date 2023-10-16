@@ -13,10 +13,10 @@ const Search = () => {
             </svg>
           </div>
           <input
-            type="text"
-            className="w-full max-w-[160px] bg-white pl-2 text-base font-semibold outline-0"
-            placeholder=""
-            id=""
+            type="search"
+            className="w-full max-w-[160px] bg-white pl-2 text-primary font-semibold outline-0"
+            placeholder="search..."
+            id="search"
           />
           <input
             type="button"

@@ -16,7 +16,7 @@ export const sidebarLinks = [
   {
     icon: <BsWalletFill className="h-5 w-5" />,
     title: "balances",
-    path: "/",
+    path: "/balance",
   },
   {
     icon: <BiTransfer className="h-5 w-5" />,

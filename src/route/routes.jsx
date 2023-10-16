@@ -3,6 +3,7 @@ import Login from "../pages/Login";
 import Signup from "../pages/Signup";
 import ForgotPassword from "../pages/ForgotPassword";
 import MainLayout from "../layout/MainLayout";
+import Balance from "../pages/Balance";
 
 const router = createBrowserRouter([
   // {
@@ -12,6 +13,12 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
+    children: [
+      {
+        path: "balance",
+        element: <Balance />,
+      },
+    ],
   },
   {
     path: "/login",
