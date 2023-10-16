@@ -1,17 +1,20 @@
+import { Link } from "react-router-dom";
 import Card from "./Card";
 
 const TransactionsHistory = () => {
   return (
     <Card>
       <div className="overflow-x-auto">
-        <table className="table-auto">
+        <table className="table table-xs">
           <thead>
             <tr>
-              <th>Date</th>
-              <th>status</th>
-              <th>Transaction Type</th>
-              <th>Receipt</th>
-              <th>Amount</th>
+              <th className="font-bold capitalize text-black">Date</th>
+              <th className="font-bold capitalize text-black">status</th>
+              <th className="font-bold capitalize text-black">
+                Transaction Type
+              </th>
+              <th className="font-bold capitalize text-black">Receipt</th>
+              <th className="font-bold capitalize text-black">Amount</th>
             </tr>
           </thead>
           <tbody>
@@ -20,10 +23,148 @@ const TransactionsHistory = () => {
               <td>Complete</td>
               <td>Credit</td>
               <td>8C52d5DKDJ5</td>
-              <td>$160.00</td>
+              <td className="font-bold">$160.00</td>
+            </tr>
+            <tr>
+              <th>17 Apr, 2023</th>
+              <td>Complete</td>
+              <td>Credit</td>
+              <td>8C52d5DKDJ5</td>
+              <td className="font-bold">$160.00</td>
+            </tr>
+            <tr>
+              <th>17 Apr, 2023</th>
+              <td>Complete</td>
+              <td>Credit</td>
+              <td>8C52d5DKDJ5</td>
+              <td className="font-bold">$160.00</td>
+            </tr>
+            <tr>
+              <th>17 Apr, 2023</th>
+              <td>Complete</td>
+              <td>Credit</td>
+              <td>8C52d5DKDJ5</td>
+              <td className="font-bold">$160.00</td>
+            </tr>
+            <tr>
+              <th>17 Apr, 2023</th>
+              <td>Complete</td>
+              <td>Credit</td>
+              <td>8C52d5DKDJ5</td>
+              <td className="font-bold">$160.00</td>
+            </tr>
+            <tr>
+              <th>17 Apr, 2023</th>
+              <td>Complete</td>
+              <td>Credit</td>
+              <td>8C52d5DKDJ5</td>
+              <td className="font-bold">$160.00</td>
+            </tr>
+            <tr>
+              <th>17 Apr, 2023</th>
+              <td>Complete</td>
+              <td>Credit</td>
+              <td>8C52d5DKDJ5</td>
+              <td className="font-bold">$160.00</td>
+            </tr>
+            <tr>
+              <th>17 Apr, 2023</th>
+              <td>Complete</td>
+              <td>Credit</td>
+              <td>8C52d5DKDJ5</td>
+              <td className="font-bold">$160.00</td>
+            </tr>
+            <tr>
+              <th>17 Apr, 2023</th>
+              <td>Complete</td>
+              <td>Credit</td>
+              <td>8C52d5DKDJ5</td>
+              <td className="font-bold">$160.00</td>
+            </tr>
+            <tr>
+              <th>17 Apr, 2023</th>
+              <td>Complete</td>
+              <td>Credit</td>
+              <td>8C52d5DKDJ5</td>
+              <td className="font-bold">$160.00</td>
+            </tr>
+            <tr>
+              <th>17 Apr, 2023</th>
+              <td>Complete</td>
+              <td>Credit</td>
+              <td>8C52d5DKDJ5</td>
+              <td className="font-bold">$160.00</td>
+            </tr>
+            <tr>
+              <th>17 Apr, 2023</th>
+              <td>Complete</td>
+              <td>Credit</td>
+              <td>8C52d5DKDJ5</td>
+              <td className="font-bold">$160.00</td>
+            </tr>
+            <tr>
+              <th>17 Apr, 2023</th>
+              <td>Complete</td>
+              <td>Credit</td>
+              <td>8C52d5DKDJ5</td>
+              <td className="font-bold">$160.00</td>
+            </tr>
+            <tr>
+              <th>17 Apr, 2023</th>
+              <td>Complete</td>
+              <td>Credit</td>
+              <td>8C52d5DKDJ5</td>
+              <td className="font-bold">$160.00</td>
+            </tr>
+            <tr>
+              <th>17 Apr, 2023</th>
+              <td>Complete</td>
+              <td>Credit</td>
+              <td>8C52d5DKDJ5</td>
+              <td className="font-bold">$160.00</td>
+            </tr>
+            <tr>
+              <th>17 Apr, 2023</th>
+              <td>Complete</td>
+              <td>Credit</td>
+              <td>8C52d5DKDJ5</td>
+              <td className="font-bold">$160.00</td>
+            </tr>
+            <tr>
+              <th>17 Apr, 2023</th>
+              <td>Complete</td>
+              <td>Credit</td>
+              <td>8C52d5DKDJ5</td>
+              <td className="font-bold">$160.00</td>
+            </tr>
+            <tr>
+              <th>17 Apr, 2023</th>
+              <td>Complete</td>
+              <td>Credit</td>
+              <td>8C52d5DKDJ5</td>
+              <td className="font-bold">$160.00</td>
+            </tr>
+            <tr>
+              <th>17 Apr, 2023</th>
+              <td>Complete</td>
+              <td>Credit</td>
+              <td>8C52d5DKDJ5</td>
+              <td className="font-bold">$160.00</td>
+            </tr>
+            <tr>
+              <th>17 Apr, 2023</th>
+              <td>Complete</td>
+              <td>Credit</td>
+              <td>8C52d5DKDJ5</td>
+              <td className="font-bold">$160.00</td>
             </tr>
           </tbody>
         </table>
+      </div>
+      <div className="text-center mt-5">
+        <Link to="" className="btn btn-primary capitalize px-10">
+          Load more
+        </Link>
       </div>
     </Card>
   );
