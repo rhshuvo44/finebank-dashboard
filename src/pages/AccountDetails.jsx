@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import AccountDetailCard from "../components/AccountDetailCard";
 import PageTitle from "../components/PageTitle";
+import TransactionsHistory from "../components/TransactionsHistory";
 // import { balancesCards } from "../services";
 
 const AccountDetails = () => {
@@ -11,6 +12,8 @@ const AccountDetails = () => {
     <section>
       <PageTitle title="Account Details" />
       <AccountDetailCard />
+      <PageTitle title="Transactions History" />
+      <TransactionsHistory />
     </section>
   );
 };
