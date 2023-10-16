@@ -1,75 +1,42 @@
+import { BiChevronsRight } from "react-icons/bi";
+import { Link } from "react-router-dom";
+import Search from "../components/Search";
+
 const Header = () => {
+  const date = new Date();
+  console.log(date.toDateString());
   return (
-    <div className="navbar bg-[#191919] fixed top-0 text-white z-50 px-10">
-      <div className="navbar-start">
-        <label tabIndex={0} className="btn btn-ghost lg:hidden">
+    <div className="navbar bg-[#191919] text-white fixed top-0  z-50 px-10">
+      <div className="navbar-start w-72">
+        <label htmlFor="dashboard-drawer" className="btn btn-ghost lg:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
             fill="none"
             viewBox="0 0 24 24"
-            stroke="currentColor"
+            className="inline-block w-5 h-5 stroke-current"
           >
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
-              d="M4 6h16M4 12h8m-8 6h16"
-            />
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
           </svg>
         </label>
-        {/* <div className="dropdown">
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-          >
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
-          </ul>
-        </div> */}
-        <h2 className="text-white  font-bold text-3xl">FINEbank.IO</h2>
-
-        {/* <a className="btn btn-ghost normal-case text-xl">daisyUI</a> */}
+        <Link to="/" className="text-white  font-bold text-3xl">
+          FINEbank.IO
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Item 1</a>
-          </li>
-          <li tabIndex={0}>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <a>Item 3</a>
-          </li>
-        </ul>
+        <div className="flex items-center px-8">
+          <h3 className="font-bold text-3xl capitalize text-primary mr-3">
+            Hello Ripon
+          </h3>
+          <BiChevronsRight className="text-[#9F9F9F]" />
+          <p className="text-[#9F9F9F]"> {date.toDateString()}</p>
+        </div>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end w-full">
         <button className="btn btn-ghost btn-circle">
           <div className="indicator">
             <svg
@@ -90,11 +57,7 @@ const Header = () => {
           </div>
         </button>
         <div className="form-control hidden md:flex">
-          <input
-            type="text"
-            placeholder="Search"
-            className="input input-bordered w-24 md:w-auto"
-          />
+          <Search />
         </div>
       </div>
     </div>
