@@ -89,3 +89,66 @@ export const balancesCards = [
     amount: "2500",
   },
 ];
+
+export const expensesData = [
+  {
+    name: "Jan",
+    current: 4000,
+    previous: 2400,
+  },
+  {
+    name: "Feb",
+    current: 3000,
+    previous: 1398,
+  },
+  {
+    name: "Mar",
+    current: 2000,
+    previous: 9800,
+  },
+  {
+    name: "Apr",
+    current: 2780,
+    previous: 3908,
+  },
+  {
+    name: "May",
+    current: 1890,
+    previous: 4800,
+  },
+  {
+    name: "Jun",
+    current: 2390,
+    previous: 3800,
+  },
+  {
+    name: "July",
+    current: 3490,
+    previous: 4300,
+  },
+  {
+    name: "Aug",
+    current: 3490,
+    previous: 4300,
+  },
+  {
+    name: "Sep",
+    current: 3490,
+    previous: 4300,
+  },
+  {
+    name: "Oct",
+    current: 3490,
+    previous: 4300,
+  },
+  {
+    name: "Nov",
+    current: 3490,
+    previous: 4300,
+  },
+  {
+    name: "Dec",
+    current: 3490,
+    previous: 4300,
+  },
+];
