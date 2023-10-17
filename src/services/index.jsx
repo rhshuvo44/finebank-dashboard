@@ -26,22 +26,22 @@ export const sidebarLinks = [
   {
     icon: <BiMoney className="h-5 w-5" />,
     title: "bills",
-    path: "/",
+    path: "/bill",
   },
   {
     icon: <BiMoneyWithdraw className="h-5 w-5" />,
     title: "expenses",
-    path: "/",
+    path: "/expenses",
   },
   {
     icon: <BiTargetLock className="h-5 w-5" />,
     title: "goals",
-    path: "/",
+    path: "/goals",
   },
   {
     icon: <AiFillSetting className="h-5 w-5" />,
     title: "settings",
-    path: "/",
+    path: "/setting",
   },
 ];
 

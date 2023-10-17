@@ -6,6 +6,10 @@ import MainLayout from "../layout/MainLayout";
 import Balance from "../pages/Balance";
 import AccountDetails from "../pages/AccountDetails";
 import Transaction from "../pages/Transaction";
+import Bill from "../pages/Bill";
+import Expenses from "../pages/Expenses";
+import Goals from "../pages/Goals";
+import Setting from "../pages/Setting";
 
 const router = createBrowserRouter([
   // {
@@ -39,6 +43,22 @@ const router = createBrowserRouter([
       {
         path: "transaction",
         element: <Transaction />,
+      },
+      {
+        path: "bill",
+        element: <Bill />,
+      },
+      {
+        path: "expenses",
+        element: <Expenses />,
+      },
+      {
+        path: "goals",
+        element: <Goals />,
+      },
+      {
+        path: "setting",
+        element: <Setting />,
       },
     ],
   },
