@@ -27,8 +27,8 @@ const BarCharts = ({ data }) => {
               lineHeight: "40px",
             }}
           />
-          <Bar dataKey="previous" fill="#8884d8" barSize={10} />
-          <Bar dataKey="current" fill="#82ca9d" barSize={10} />
+          <Bar dataKey="previous" fill="#9F9F9F" barSize={10} />
+          <Bar dataKey="current" fill="#299D91" barSize={10} />
         </BarChart>
       </div>
     </Card>
