@@ -1,4 +1,3 @@
-import { BsFillGridFill, BsWalletFill } from "react-icons/bs";
 import { AiFillSetting } from "react-icons/ai";
 import {
   BiMoney,
@@ -6,6 +5,7 @@ import {
   BiTargetLock,
   BiTransfer,
 } from "react-icons/bi";
+import { BsFillGridFill, BsWalletFill } from "react-icons/bs";
 
 export const sidebarLinks = [
   {
