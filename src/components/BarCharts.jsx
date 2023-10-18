@@ -12,7 +12,7 @@ import Card from "./Card";
 const BarCharts = ({ data }) => {
   return (
     <Card>
-      <div className="pt-5">
+      <div className="pt-5 w-full">
         <BarChart width={1000} height={300} data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
