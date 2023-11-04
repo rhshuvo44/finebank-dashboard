@@ -13,7 +13,7 @@ const ExpensesBreakdownSingle = () => {
         </div>
         <div className="flex flex-col items-end">
           <p className="flex items-center gap-2 font-bold text-sm text-neutral">
-            15% <BsArrowUp className="text-error" />{" "}
+            15% <BsArrowUp className="text-error" />
           </p>
           <p className="text-sm text-secondary">Compare to last month</p>
         </div>

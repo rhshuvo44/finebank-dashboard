@@ -4,7 +4,7 @@ import { FaGamepad } from "react-icons/fa";
 const TransactionsTable = () => {
   return (
     <Card>
-      <div className="overflow-x-auto">
+      <div className="overflow-auto">
         <table className="table ">
           <thead>
             <tr>

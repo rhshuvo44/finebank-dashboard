@@ -1,11 +1,9 @@
-import { Link } from "react-router-dom";
-import Card from "./Card";
-
 const TransactionsHistory = () => {
   return (
-    <Card>
-      <div className="overflow-x-auto">
-        <table className="table table-xs">
+    // <Card>
+    <>
+      <div className="overflow-auto shadow-lg bg-white rounded-xl p-5">
+        <table className="table">
           <thead>
             <tr>
               <th className="font-bold capitalize text-black">Date</th>
@@ -161,12 +159,13 @@ const TransactionsHistory = () => {
           </tbody>
         </table>
       </div>
-      <div className="text-center mt-5">
+      {/* <div className="text-center mt-5">
         <Link to="" className="btn btn-primary capitalize px-10">
           Load more
         </Link>
-      </div>
-    </Card>
+      </div> */}
+    </>
+    // {/* </Card> */}
   );
 };
 

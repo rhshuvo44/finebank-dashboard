@@ -5,9 +5,11 @@ import { expensesData } from "../services";
 
 const Expenses = () => {
   return (
-    <section>
-      <PageTitle title="Expenses Comparison" />
-      <BarCharts data={expensesData} />
+    <section className="w-full">
+      <div className="w-full">
+        <PageTitle title="Expenses Comparison" />
+        <BarCharts data={expensesData} />
+      </div>
       <PageTitle title="Expenses Breakdown" />
       <ExpensesBreakdown />
     </section>

@@ -1,11 +1,5 @@
-
-
 const Goals = () => {
-    return (
-        <div>
-          goals  
-        </div>
-    );
+  return <div></div>;
 };
 
 export default Goals;

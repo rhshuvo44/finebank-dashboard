@@ -13,7 +13,8 @@ const AccountDetails = () => {
       <PageTitle title="Account Details" />
       <AccountDetailCard />
       <PageTitle title="Transactions History" />
-      <TransactionsHistory />
+      {/* <TransactionsHistory /> */}
+     
     </section>
   );
 };

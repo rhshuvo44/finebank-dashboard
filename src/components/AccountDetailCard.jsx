@@ -4,7 +4,7 @@ import Card from "./Card";
 const AccountDetailCard = () => {
   return (
     <Card>
-      <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         <div className="flex flex-col gap-10">
           <div>
             <p className="text-secondary">Bank Name</p>
