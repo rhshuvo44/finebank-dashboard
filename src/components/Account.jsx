@@ -1,6 +1,4 @@
 import { yupResolver } from "@hookform/resolvers/yup";
-import { useCallback, useState } from "react";
-import Dropzone, { useDropzone } from "react-dropzone";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import Button from "../components/Button";
@@ -9,21 +7,12 @@ import TextInput from "../components/form/TextInput";
 import FileUpload from "./form/FileUpload";
 const schema = yup
   .object({
-    oldPassword: yup
+    name: yup.string().required("Name is required"),
+    email: yup
       .string()
-      .min(8)
-      .max(32)
-      .required("Old Password is required"),
-    newPassword: yup
-      .string()
-      .min(8)
-      .max(32)
-      .required("New Password is required"),
-    retypePassword: yup
-      .string()
-      .min(8)
-      .max(32)
-      .required("Retype Password is required"),
+      .email("Invalid email address")
+      .required("Email is Required"),
+    userName: yup.string().required("User Name is required"),
     number: yup.string().min(11).max(14).required("Number is required"),
   })
   .required();
@@ -42,26 +31,26 @@ const Account = () => {
       <div className="flex flex-col justify-between md:flex-row gap-5">
         <div className="w-full md:w-1/2">
           <TextInput
-            placeholder="*****"
-            label="Old Password"
-            type="password"
-            name="oldPassword"
+            placeholder="Full Name"
+            label="Full Name"
+            type="text"
+            name="name"
             register={register}
             errors={errors}
           />
           <TextInput
-            placeholder="*****"
-            label="New Password"
-            type="password"
-            name="newPassword"
+            placeholder="Email"
+            label="Email"
+            type="email"
+            name="email"
             register={register}
             errors={errors}
           />
           <TextInput
-            placeholder="*****"
-            label="Retype Password"
-            type="password"
-            name="retypePassword"
+            placeholder="User Name"
+            label="User Name"
+            type="text"
+            name="userName"
             register={register}
             errors={errors}
           />
@@ -74,11 +63,8 @@ const Account = () => {
             errors={errors}
           />
         </div>
-   
-          <FileUpload />
-       
+        <FileUpload />
       </div>
-
       <div className="form-control mt-6 w-36">
         <Button text="Update Profile" />
       </div>

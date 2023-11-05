@@ -19,7 +19,7 @@ const FileUpload = (props) => {
         htmlFor="dropzone-file"
         className={`dropzone ${
           isDragActive ? "active" : ""
-        } flex flex-col justify-center items-center p-3  rounded-lg border-2 border-dashed  border-gray-300  cursor-pointer dark:hover:bg-bray-800  hover:bg-gray-100 `}
+        } flex flex-col justify-center items-center p-3 rounded-lg border-2 border-dashed border-gray-300 cursor-pointer dark:hover:bg-bray-800 hover:bg-gray-100 `}
       >
         <div className="flex flex-col justify-center items-center pt-5 pb-6">
           <svg
@@ -47,7 +47,6 @@ const FileUpload = (props) => {
         </div>
         <input {...getInputProps()} />
       </label>
-
       <div className="showimg mt-5 flex flex-wrap gap-3">
         {file?.map((i, j) => (
           <div key={j} className="relative">
