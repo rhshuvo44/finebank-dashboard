@@ -1,43 +1,88 @@
-import { Link } from "react-router-dom";
-
+import { yupResolver } from "@hookform/resolvers/yup";
+import { useCallback, useState } from "react";
+import Dropzone, { useDropzone } from "react-dropzone";
+import { useForm } from "react-hook-form";
+import * as yup from "yup";
+import Button from "../components/Button";
+import Form from "../components/form/Form";
+import TextInput from "../components/form/TextInput";
+import FileUpload from "./form/FileUpload";
+const schema = yup
+  .object({
+    oldPassword: yup
+      .string()
+      .min(8)
+      .max(32)
+      .required("Old Password is required"),
+    newPassword: yup
+      .string()
+      .min(8)
+      .max(32)
+      .required("New Password is required"),
+    retypePassword: yup
+      .string()
+      .min(8)
+      .max(32)
+      .required("Retype Password is required"),
+    number: yup.string().min(11).max(14).required("Number is required"),
+  })
+  .required();
 const Account = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
+
+  const onSubmit = (data) => console.log(data);
   return (
-    <>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        <div className="flex flex-col gap-10">
-          <div>
-            <p className="text-secondary">Bank Name</p>
-            <h4 className="card-title text-black">AB Bank Ltd</h4>
-          </div>
-          <div>
-            <p className="text-secondary">Branch Name</p>
-            <h4 className="card-title text-black">park Street Branch</h4>
-          </div>
+    <Form onSubmit={handleSubmit(onSubmit)}>
+      <div className="flex flex-col justify-between md:flex-row gap-5">
+        <div className="w-full md:w-1/2">
+          <TextInput
+            placeholder="*****"
+            label="Old Password"
+            type="password"
+            name="oldPassword"
+            register={register}
+            errors={errors}
+          />
+          <TextInput
+            placeholder="*****"
+            label="New Password"
+            type="password"
+            name="newPassword"
+            register={register}
+            errors={errors}
+          />
+          <TextInput
+            placeholder="*****"
+            label="Retype Password"
+            type="password"
+            name="retypePassword"
+            register={register}
+            errors={errors}
+          />
+          <TextInput
+            placeholder="+88017111111"
+            label="Phone Number"
+            type="tel"
+            name="number"
+            register={register}
+            errors={errors}
+          />
         </div>
-        <div className="flex flex-col gap-10">
-          <div>
-            <p className="text-secondary">Account type</p>
-            <h4 className="card-title text-black">Checking</h4>
-          </div>
-          <div>
-            <p className="text-secondary">Account Number</p>
-            <h4 className="card-title text-black">3388 4556 8860 8***</h4>
-          </div>
-        </div>
-        <div className="flex flex-col gap-10">
-          <div>
-            <p className="text-secondary">Balance</p>
-            <h4 className="card-title text-black">$25,056.00</h4>
-          </div>
-        </div>
+   
+          <FileUpload />
+       
       </div>
-      <div className="card-actions justify-start mt-8 items-center">
-        <Link to="" className="btn btn-primary capitalize">
-          Edit Details
-        </Link>
-        <button className="text-primary ml-20">Remove</button>
+
+      <div className="form-control mt-6 w-36">
+        <Button text="Update Profile" />
       </div>
-    </>
+    </Form>
   );
 };
 

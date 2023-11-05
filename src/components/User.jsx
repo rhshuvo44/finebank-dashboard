@@ -1,4 +1,4 @@
-import user from "../assets/ripon.jpg";
+
 import SocialShare from "./SocialShare";
 const User = () => {
   return (
@@ -6,7 +6,7 @@ const User = () => {
       <section className="flex justify-center items-center w-14 h-14 rounded-full shadow-md bg-gradient-to-r from-[#F9C97C] to-[#A2E9C1] hover:from-[#C9A9E9] hover:to-[#7EE7FC] hover:cursor-pointer hover:scale-110 duration-300">
         <div className="avatar">
           <div className="w-12 rounded-full">
-            <img src={user} alt="user" />
+            <img src="ripon.jpg" alt="user" />
           </div>
         </div>
       </section>
