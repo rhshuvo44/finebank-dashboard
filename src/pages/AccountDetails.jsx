@@ -13,8 +13,9 @@ const AccountDetails = () => {
       <PageTitle title="Account Details" />
       <AccountDetailCard />
       <PageTitle title="Transactions History" />
-      {/* <TransactionsHistory /> */}
-     
+      {/* <div className="w-full"> */}
+      <TransactionsHistory />
+      {/* </div> */}
     </section>
   );
 };

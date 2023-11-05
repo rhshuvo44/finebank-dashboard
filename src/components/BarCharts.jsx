@@ -9,25 +9,8 @@ import {
   YAxis,
 } from "recharts";
 import Card from "./Card";
-import { useEffect, useState } from "react";
 
 const BarCharts = ({ data }) => {
-  // State to store the width of the chart container
-  // const [chartWidth, setChartWidth] = useState(window.innerWidth);
-
-  // // Function to update the chart width
-  // const updateChartWidth = () => {
-  //   setChartWidth(window.innerWidth);
-  // };
-
-  // useEffect(() => {
-  //   // Listen for window resize events and update chart width
-  //   window.addEventListener("resize", updateChartWidth);
-  //   return () => {
-  //     // Remove the event listener when the component unmounts
-  //     window.removeEventListener("resize", updateChartWidth);
-  //   };
-  // }, []);
   return (
     <Card>
       <ResponsiveContainer width="100%" height={300}>
