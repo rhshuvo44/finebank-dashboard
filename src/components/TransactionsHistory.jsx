@@ -4,7 +4,7 @@ import Card from "./Card";
 const TransactionsHistory = () => {
   return (
     <Card>
-      <div style={{ width: "90%" }}>
+      <div style={{ width: "100%" }}>
         <div className="overflow-auto">
           <table className="table">
             <thead>

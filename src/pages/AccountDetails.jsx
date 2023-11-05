@@ -1,7 +1,8 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import AccountDetailCard from "../components/AccountDetailCard";
 import PageTitle from "../components/PageTitle";
 import TransactionsHistory from "../components/TransactionsHistory";
+import Card from "../components/Card";
 // import { balancesCards } from "../services";
 
 const AccountDetails = () => {
@@ -13,9 +14,9 @@ const AccountDetails = () => {
       <PageTitle title="Account Details" />
       <AccountDetailCard />
       <PageTitle title="Transactions History" />
-      {/* <div className="w-full"> */}
-      <TransactionsHistory />
-      {/* </div> */}
+      <div className="grid grid-cols-1">
+        <TransactionsHistory />
+      </div>
     </section>
   );
 };
