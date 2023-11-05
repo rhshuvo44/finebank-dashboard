@@ -10,13 +10,19 @@ const TabsCmp = () => {
         <Tab>Expenses</Tab>
       </TabList>
       <TabPanel>
-        <TransactionsTable />
+        <div className="grid grid-cols-1">
+          <TransactionsTable />
+        </div>
       </TabPanel>
       <TabPanel>
-        <TransactionsTable />
+        <div className="grid grid-cols-1">
+          <TransactionsTable />
+        </div>
       </TabPanel>
       <TabPanel>
-        <TransactionsTable />
+        <div className="grid grid-cols-1">
+          <TransactionsTable />
+        </div>
       </TabPanel>
     </Tabs>
   );
